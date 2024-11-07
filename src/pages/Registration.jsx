@@ -13,7 +13,8 @@ const Registration = () => {
    
 
 
-    const handleFormSubmit=(data)=>{
+    const handleFormSubmit=(data ,event)=>{
+        event.preventDefault();
 const today= new Date ();
 const dob = new Date (data.dob);
 let age= today.getFullYear()- dob.getFullYear();
@@ -47,6 +48,7 @@ setUser({
 
 
     });
+    
 
        notify();
        reset();

@@ -3,6 +3,7 @@ import { VoterContextProvider } from './context/VoterContext'
 import Profile from './pages/Profile'
 import Registration from './pages/Registration'
 import {Toaster} from "react-hot-toast"
+import './index.css';
 
 
 
